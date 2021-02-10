@@ -1,17 +1,41 @@
+<div class="navbar-wrap">
+  <div class="navbar-logo c-pointer" routerLink="/">
+      JOB PORTAL
+  </div>
+  <div class="navbar-content">
+      <div class="content-btn">
+          <span class="employers">EMPLOYERS</span>
+      </div>
+      <div class="content-btn" routerLink="/candidate/register">
+          REGISTER
+      </div>
+      <div class="content-btn" routerLink="login">
+          LOGIN
+      </div>
+      <div class="content-btn">
+          ABOUT
+      </div>
+      <div class="content-btn">
+          HOME
+      </div>
+      
+  </div>
+</div>
+
 <div class="login-page">
     <div class="form">
-      <form class="register-form">
+      <!-- <form class="register-form">
         <input type="text" placeholder="name"/>
         <input type="password" placeholder="password"/>
         <input type="text" placeholder="email address"/>
         <button>create</button>
         <p class="message">Already registered? <a href="#">Sign In</a></p>
-      </form>
-      <form class="login-form">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
-        <button>login</button>
-        <p class="message">Not registered? <a href="#">Create an account</a></p>
-      </form>
+      </form> -->
+      <!-- <form class="login-form"> -->
+        <input #email type="text" placeholder="username"/>
+        <input #pass type="password" placeholder="password"/>
+        <button (click)="onLogIn(email.value,pass.value)">login</button>
+        <p class="message">Not registered? <a routerLink="../candidate/register">Create an account</a></p>
+      <!-- </form> -->
     </div>
   </div>

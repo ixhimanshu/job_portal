@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-candidate-signup',
+  templateUrl: './candidate-signup.component.html',
+  styleUrls: ['./candidate-signup.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class CandidateSignupComponent implements OnInit {
 
   constructor(private auth:AuthService) { }
 
@@ -20,16 +20,6 @@ export class LoginComponent implements OnInit {
       console.log(res);
       
     })
-  }
-
-  onLogIn(email,pass){
-    console.log(email,pass);
-    this.auth.SignIn(email,pass)
-    .then(res => {
-      console.log(res);
-      
-    })
-
   }
 
 }
