@@ -6,16 +6,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './modules/landingpage/landingpage.component';
-import { MainNavbarComponent } from './modules/landingpage/components/main-navbar/main-navbar.component';
-import { MainFooterComponent } from './modules/landingpage/components/main-footer/main-footer.component';
 import { firebaseConfig } from 'src/environments/environment';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingpageComponent,
-    MainNavbarComponent,
-    MainFooterComponent
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,
@@ -23,9 +20,9 @@ import { firebaseConfig } from 'src/environments/environment';
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    SharedModule
   ],
   exports: [
-    MainNavbarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
