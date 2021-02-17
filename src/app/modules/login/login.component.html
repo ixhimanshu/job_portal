@@ -2,19 +2,10 @@
 
 <div class="login-page">
     <div class="form">
-      <!-- <form class="register-form">
-        <input type="text" placeholder="name"/>
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
-        <button>create</button>
-        <p class="message">Already registered? <a href="#">Sign In</a></p>
-      </form> -->
-      <!-- <form class="login-form"> -->
-        <input #email type="text" placeholder="username"/>
-        <input #pass type="password" placeholder="password"/>
+        <input #email type="text" placeholder="Username"/>
+        <input #pass type="password" placeholder="Password"/>
         <button (click)="onLogIn(email.value,pass.value)">login</button>
         <p class="message">Not registered? <a routerLink="../candidate/register">Create an account</a></p>
-      <!-- </form> -->
     </div>
   </div>
 
