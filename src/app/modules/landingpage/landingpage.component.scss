@@ -27,6 +27,7 @@ img{
     height: 100vh;
     position: relative;
     color: black;
+    box-shadow: 0px -3px 5px 0px #333;
 }
 
 .Main .content {
@@ -97,9 +98,10 @@ img{
 .icons i {
     background-color: #28a745;
     color: #fff;
-    padding: 1rem;
+    padding: 10px 12px;
     border-radius: 50%;
     margin-bottom: 15px;
+    font-size: 25px;
 }
 
 /* Flex Items */
@@ -108,7 +110,9 @@ img{
     text-align: center;
     justify-content: center;
     height: 100%;
-    background: url('../../../assets/image/Workplace.jpg') no-repeat center center/cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../assets/image/Workplace.jpg');
+    background-position: center;
+    background-size: cover;
     opacity: 0.9;
     font-size: 25px;
     font-weight: 800;
@@ -172,7 +176,7 @@ img{
 
 .column{
     width: 50%;
-    height: 88.5vh;
+    margin-bottom: 50px;
 }
 
 .column-1{
@@ -187,25 +191,25 @@ img{
 }
 
 .row1{
-    padding-left: 190px;
-    padding-top: 65px;
+    padding-top: 35px;
     max-width: 680px;
 }
 
 .row2{
-    padding-left: 190px;
-    padding-top: 65px;
+    padding-top: 35px;
     max-width: 680px;
 }
 
 .btn-1{
     cursor: pointer;
     display: inline-block;
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     color: #fff;
     background-color: #28a745;
     border: rgb(3, 43, 6);
     border-radius: 5px;
-    margin-left: 160px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
