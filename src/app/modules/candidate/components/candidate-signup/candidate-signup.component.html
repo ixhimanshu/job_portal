@@ -1,23 +1,14 @@
 
 <app-navbar></app-navbar>
 
-<div class="candidate-wrapper" style="margin-top: 100px;">
-    <div class="candidate-navbar">
-        <!-- <app-candidate-navbar></app-candidate-navbar> -->
-    </div>
 
-    <div class="m-auto container">
         <div class="login-page">
             <div class="form">
-                <input #email type="text" placeholder="username"/>
-                <input #pass type="password" placeholder="password"/>
+                <input #email type="text" placeholder="Username"/>
+                <input #pass type="password" placeholder="Password"/>
                 <button (click)="onSignUp(email.value,pass.value)">Register</button>
                 <p class="message">Already registered? <a routerLink="../../login">Login</a></p>
             </div>
           </div>
-    </div>
 
-    <div class="candidate-footer">
-        <app-footer></app-footer>
-    </div>
-</div>
+<app-footer></app-footer>
