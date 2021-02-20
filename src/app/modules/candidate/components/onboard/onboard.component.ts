@@ -15,8 +15,12 @@ export class OnboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onStep1(){
+  onStepUp(){
     this.curr_step++
+  }
+
+  onStepDown(){
+    this.curr_step--
   }
 
   getHired(){

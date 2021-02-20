@@ -3,19 +3,19 @@
         JOB PORTAL
     </div>
     <div class="navbar-content">
-        <div class="content-btn">
+        <div class="content-btn" (click)="scrollToTop()">
             <span class="employers">EMPLOYERS</span>
         </div>
-        <div class="content-btn" routerLink="/candidate/register">
+        <div class="content-btn" routerLink="/candidate/register" (click)="scrollToTop()">
             REGISTER
         </div>
-        <div class="content-btn" routerLink="/login">
+        <div class="content-btn" routerLink="/login" (click)="scrollToTop()">
             LOGIN
         </div>
-        <div class="content-btn">
+        <div class="content-btn" (click)="scrollToBottom()">
             ABOUT
         </div>
-        <div class="content-btn">
+        <div class="content-btn" routerLink="/" (click)="scrollToTop()">
             HOME
         </div>
         

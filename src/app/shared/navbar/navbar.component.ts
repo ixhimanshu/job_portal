@@ -9,9 +9,18 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   constructor(private route: Router) { }
-
+  
   ngOnInit(): void {
+    this.scrollToBottom();
+    this.scrollToTop();
   }
 
+  scrollToBottom(): void {
+    document.scrollingElement.scrollTo(0,document.scrollingElement.scrollHeight);
+  }
+
+  scrollToTop(): void {
+    document.scrollingElement.scrollTo(0,0);
+  }
 
 }
