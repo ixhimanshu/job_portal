@@ -1,13 +1,36 @@
 <app-navbar></app-navbar>
-
-<div class="login-page">
-    <div class="form">
-        <input #email type="text" placeholder="Username"/>
-        <input #pass type="password" placeholder="Password"/>
-        <button (click)="onLogIn(email.value,pass.value)">login</button>
-        <p class="message">Not registered? <a routerLink="../candidate/register">Create an account</a></p>
+<div class="login-form">
+    <div class="container" style="margin-top: 50px; margin-bottom: -8px;"> 
+        <div class="row">
+            <div class="col-sm-6 col-top"></div>
+            <div class="col-sm-6 col-btn">        
+                <h4 style="text-align: center;">Login</h4>
+                <div class="social-media">
+                    <div class="google">
+                        <button class="googlebtn" type="google">Sign in with Google</button>
+                    </div> 
+                    <div class="facebook">
+                        <button class="fbbtn" type="facebook">Sign in with Facebook</button>
+                    </div>
+                </div>
+                <div class="or-sec">
+                    <span class="or-text">or</span>
+                </div>
+                <div class="email">
+                    <label><b>Email</b></label> 
+                    <input type="text" placeholder="Enter Email/Number" name="Email" required>  
+                </div>
+                <div class="password">
+                    <label><b>Password</b></label> 
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                </div> 
+                <input class="Remember" type="checkbox" checked="checked">   Remember me
+                <span class="psw"><a href="#">Forgot password?</a></span>
+                <div class="submit">
+                    <button class="submitbtn" type="submit"> Login</button>      
+                </div>  
+            </div>      
+        </div>
     </div>
-  </div>
-
-
-  <app-footer></app-footer>
+    <app-footer></app-footer>
+</div>
